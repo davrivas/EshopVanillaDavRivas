@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="static/images/icons/favicon.png">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="static/css/catMenu.css">
+        <link rel="stylesheet" type="text/css" href="static/css/checkboxes.css">
+        <link rel="stylesheet" type="text/css" href="static/css/filters.css">
+        <link rel="stylesheet" type="text/css" href="static/css/footer.css">
+        <link rel="stylesheet" type="text/css" href="static/css/headerBar.css">
+        <link rel="stylesheet" type="text/css" href="static/css/index.css">
+        <link rel="stylesheet" type="text/css" href="static/css/modalBox.css">
+        <link rel="stylesheet" type="text/css" href="static/css/productDetails.css">
+        <link rel="stylesheet" type="text/css" href="static/css/products.css">
+        <link rel="stylesheet" type="text/css" href="static/css/select.css">
+        <link rel="stylesheet" type="text/css" href="static/css/shoppingCart.css">
+        <link rel="stylesheet" type="text/css" href="static/css/slider.css">
+
+        <!-- Quick fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+        
+        <!-- Meta markups -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Candy Bucket</title>
+    </head>
+
+    <body>
+        <header class="headerBar">
+            <div class="shopName">
+                <img class="shopIcon" src="static/images/icons/favicon.png">
+                Candy Bucket2
+            </div>
+
+            <div class="catCart">
+                <ul class="headerCategories">
+                    <li class="Categories">GUMS</li>
+                    <li class="Categories">CHOCOLATES</li>
+                    <li class="Categories">HARD CANDIES</li>
+                    <li class="Categories">OTHER</li>
+                </ul>
+
+                <div class="shoppingCart">
+                    <a href="#openShopCartModal" title="Open Shopping Cart">
+                        <img alt="Shopping Cart" class="scIcon" src="static/images/icons/cart.png"></img>
+                        <div class="productCounter">3</div>
+                    </a>
+
+                    <a class="headerPull-downMenu" href="#openHeaderMenu"><img alt="Pull-down menu" class="headerPull-downMenu" src="static/images/icons/pull-down.png"></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Header Menu Mobile Tablet -->
+
+        <div id="openHeaderMenu" class="modalBackground">
+            <div class="modalHeaderMenu">
+                <a href="#closeModal" title="Close" class="closeHeaderMenu">✕</a>
+                <h2>PRODUCTS</h2>
+                <ul class="headerMenuProducts">
+                    <li>GUMS</li>
+                    <li>CHOCOLATES</li>
+                    <li>HARD CANDIES</li>
+                    <li>OTHER</li>
+                </ul>
+
+                <div class="modalCountries">
+                    <select>
+                        <option>COUNTRY</option>
+                    </select>
+                </div>
+                
+                <h2>MORE</h2>
+
+                <ul class="headerMenuProducts">
+                    <li>ABOUT</li>
+                    <li>PRIVACY POLICY</li>
+                    <li>TERMS & CONDITIONS</li>
+                    <li>LIMITED WARRANCY</li>
+                </ul>
+
+                <footer class="headerMenu">
+                    <div class="copyright">DESIGNED DAVID RIVAS 2015</div>
+
+                    <div class="socialNetworks">
+                        <a class="socialLink" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//localhost%3A3000/" target="_blank"><img alt="Facebook" class="Facebook" src="static/images/social-media/fb.png" target="_blank"></a>
+                        <a class="socialLink" href="https://twitter.com/home?status=%20Candy%20bucket%20http%3A//localhost%3A3000/" target="_blank"><img alt="Twitter" class="Twitter" src="static/images/social-media/twitter.png"></a>
+                        <a class="socialLink" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//localhost%3A3000/&title=Candy%20bucket&summary=The%20most%20interesting%20candy%20shop.&source=" target="_blank"><img alt="LinkedIn" class="LinkedIn" src="static/images/social-media/linkedin.png"></a>
+                    </div>
+                </footer>
+
+                <div class="final"></div>
+            </div>
+        </div>
+
+        <!-- Shopping cart -->
+
+        <div id="openShopCartModal" class="modalBackground">
+            <div class="modalContent">
+                <a href="#closeModal" title="Close" class="closeModal">✕</a>
+
+                <div class="modalImage">
+                    <img alt="Candy shop" class="shopCartHeaderImage" src="static/images/sc-header-img.jpg">
+                </div>
+                
+                <header class="check-buy">
+                    <div class="checkout">
+                        <img alt="Shopping Cart" class="scIcon" src="static/images/icons/cart.png"></img>
+                        <div class="productCounter">3</div>
+                        <div class="checkText">Checkout</div>
+                    </div>
+
+                    <img class="buy" src="static/images/icons/buy.png">
+                </header>
+
+                <section class="productsInCart">
+                    <ul class="cartList">
+                        <li class="cartItem">
+                            <img src="static/images/gum/mint/product_card.png">
+                            <div class="close">✕</div>
+                            <div class="name">MINT GUM</div>
+                            <div class="desc">Comfortable fresh</div>
+                            <div class="add-remove">
+                                <div class="add"><img class="addUp"src="static/images/icons/cart-add.png"></div>
+                                <div class="counter">0</div>
+                                <div class="remove"><img class="removeDown" src="static/images/icons/cart-remove.png"></div>
+                            </div>
+                            <div class="price">[$ 0]</div>
+                        </li>
+                        <li class="cartItem">
+                            <img src="static/images/choco/bear/product_card.png">
+                            <div class="close">✕</div>
+                            <div class="name">CHOCO BEARS</div>
+                            <div class="desc">The most cute bears</div>
+                            <div class="add-remove">
+                                <div class="add"><img class="addUp"src="static/images/icons/cart-add.png"></div>
+                                <div class="counter">0</div>
+                                <div class="remove"><img class="removeDown" src="static/images/icons/cart-remove.png"></div>
+                            </div>
+                            <div class="price">[$ 0]</div>
+                        </li>
+                        <li class="cartItem">
+                            <img src="static/images/hard/jaw/product_card.png">
+                            <div class="close">✕</div>
+                            <div class="name">JAW BREAKERS</div>
+                            <div class="desc">Chew this is hard</div>
+                            <div class="add-remove">
+                                <div class="add"><img class="addUp"src="static/images/icons/cart-add.png"></div>
+                                <div class="counter">0</div>
+                                <div class="remove"><img class="removeDown" src="static/images/icons/cart-remove.png"></div>
+                            </div>
+                            <div class="price">[$ 0]</div>
+                        </li>
+                    </ul>
+                </section>
+
+                <hr class="sc-hr"></hr>
+
+                <section class="total">
+                    <div class="concept-price">
+                        <div class="concept">Subtotal:</div>
+                        <div class="price">$ 0</div>
+                    </div>
+
+                    <br>
+
+                    <div class="concept-price">
+                        <div class="concept">Shipping cost:</div>
+                        <div class="price">$ 0</div>
+                    </div>
+
+                    <hr class="cp-hr">
+
+                    <div class="concept-price">
+                        <div class="concept">Total</div>
+                        <div class="price">$ 0</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="slider">
+            <ul class="sliderImages">
+                <li class="sliderList">
+                    <img class="sliderImage sliderImage1" alt="Chocolate Bears">
+                    <p class="slimgDesc desc-one">THE MOST CUTE AND</p>
+                    <p class="slimgDesc desc-two">DELICIOUS BEARS</p>
+                </li>
+                <li class="sliderList">
+                    <img class="sliderImage sliderImage2" alt="Mint Gum">
+                    <p class="slimgDesc desc-one">COMFORTABLE FRESH</p>
+                    <p class="slimgDesc desc-two">IN YOUR MOUTH</p>
+                </li>
+                <li class="sliderList">
+                    <img class="sliderImage sliderImage3" alt="Jaw breakers">
+                    <p class="slimgDesc desc-one">CHEW THIS IS</p>
+                    <p class="slimgDesc desc-two">A HARD WORK</p>
+                </li>
+            </ul>
+            
+            <ul class="sliderButtons">
+                <li class="sliderButton sliderActive"></li>
+                <li class="sliderButton"></li>
+                <li class="sliderButton"></li>
+            </ul>
+        </div>
+
+        <script type="text/javascript" src="static/js/slider.js"></script>
+
+        <div class="wrapper">
+            <!-- This is for Mobile -->
+            <header class="breadcrums">
+                <h2>FILTERS</h2>
+                <div class="breadcrum">
+                    <div class="name">Gums</div>
+                    <div class="close">✕</div>
+                </div>
+
+                <div class="breadcrum">
+                    <div class="name">Chocolates</div>
+                    <div class="close">✕</div>
+                </div>
+
+                <div class="breadcrum">
+                    <div class="name">Hard candies</div>
+                    <div class="close">✕</div>
+                </div>
+            </header>
+
+            <!-- This is for tablet and desktop -->
+            <header class="count-bread">
+                <a href="#filterMobTab" class="mobFilter">
+                    <div class="counter">
+                        <div class="name">FILTERS</div>
+                        <div class="results">[5 results]</div>
+                        <div class="plus">+</div>
+                    </div>
+                </a>
+
+                <div class="breadcrumsTD">
+                    <div class="breadcrum">
+                        <div class="name">Gums</div>
+                        <div class="close">✕</div>
+                    </div>
+
+                    <div class="breadcrum">
+                        <div class="name">Chocolates</div>
+                        <div class="close">✕</div>
+                    </div>
+
+                    <div class="breadcrum">
+                        <div class="name">Hard candies</div>
+                        <div class="close">✕</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Only for desktop -->
+            <aside class="filter">
+                <h2 class="filterTitle">SIZES</h2>
+
+                <ul class="filterOpt">
+                    <li>
+                        <div class="filterLabel">SMALL</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox1" type="checkbox" checked value="None" name="check">
+                            <label for="filterBox1"></label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="filterLabel">MEDIUM</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox2" type="checkbox" checked value="None" name="check">
+                            <label for="filterBox2"></label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="filterLabel">BIG</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox3" type="checkbox" value="None" name="check">
+                            <label for="filterBox3"></label>
+                        </div>
+                    </li>
+                </ul>
+
+                <h2 class="filterTitle">TYPES</h2>
+
+                <ul class="filterOpt">
+                    <li>
+                        <div class="filterLabel">HARD CANDIES</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox4" type="checkbox" checked value="None" name="check">
+                            <label for="filterBox4"></label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="filterLabel">CHOCOLATES</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox5" type="checkbox" checked value="None" name="check">
+                            <label for="filterBox5"></label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="filterLabel">GUMS</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox6" type="checkbox" checked value="None" name="check">
+                            <label for="filterBox6"></label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="filterLabel">CARAMELS</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox7" type="checkbox" value="None" name="check">
+                            <label for="filterBox7"></label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="filterLabel">JELLIES</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox8" type="checkbox" value="None" name="check">
+                            <label for="filterBox8"></label>
+                        </div>
+                    </li>
+                </ul>
+
+                <h2 class="filterTitle">PRICES</h2>
+
+                <ul class="filterOpt">
+                    <li>
+                        <div class="filterLabel">$0 &middot; $10</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox9" type="checkbox" checked value="None" name="check">
+                            <label for="filterBox9"></label>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="filterLabel">$11 &middot; $20</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox10" type="checkbox" checked value="None" name="check">
+                            <label for="filterBox10"></label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="filterLabel">$21 &middot; $50</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox11" type="checkbox" value="None" name="check">
+                            <label for="filterBox11"></label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="filterLabel">$51 &middot; ++</div>
+
+                        <div class="filterCheck">
+                            <input id="filterBox12" type="checkbox" value="None" name="check">
+                            <label for="filterBox12"></label>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+
+            <section class="productList">
+                <div class="productCard">
+                    <div class="productDescription">Comfortable fresh in your mouth</div>
+                    <div class="productName">MINT GUM</div>
+                    <a href="#viewProduct1" title="Product details"><div class="productDetails"></div></a>
+                    <div class="addCart"></div>
+                </div>
+                <div class="productCard">
+                    <div class="productDescription">The most cute and delicious bears</div>
+                    <div class="productName">CHOCOLATE BEAR</div>
+                    <a href="#viewProduct2" title="Product details"><div class="productDetails"></div></a>
+                    <div class="addCart"></div>
+                </div>
+                <div class="productCard">
+                    <div class="productDescription">Chew this is a hard work</div>
+                    <div class="productName">JAW BREAKERS</div>
+                    <a href="#viewProduct3" title="Product details"><div class="productDetails"></div></a>
+                    <div class="addCart"></div>
+                </div>
+                <div class="productCard">
+                    <div class="productDescription">A colorful delight</div>
+                    <div class="productName">RAINBOW LOLLIPOP</div>
+                    <a href="#viewProduct4" title="Product details"><div class="productDetails"></div></a>
+                    <div class="addCart"></div>
+                </div>
+                <div class="productCard">
+                    <div class="productDescription">Acidly delicious</div>
+                    <div class="productName">GUMONADE</div>
+                    <a href="#viewProduct5" title="Product details"><div class="productDetails"></div></a>
+                    <div class="addCart"></div>
+                </div>
+
+                <footer class="load-more">
+                    <img class="load-more" src="static/images/icons/load-more.png">
+                </footer>
+            </section>
+
+            <!-- Mobile only -->
+
+            <footer class="count-filter">
+                <div class="counter">5 results</div>
+                <a href="#filterMobTab" class="mobFilter">
+                    <div class="name">FILTER</div>
+                    <div class="plus">+</div>
+                </a>
+            </footer>
+        </div>
+
+        
+        <!-- Filter for mobile and tablet -->
+
+        <div id="filterMobTab" class="modalBackground">
+            <div class="filterMobTab">
+                <header class="filter-result">
+                    <div class="filter">FILTERS</div>
+                    <a href="#closeModal" title="Close" class="result">
+                        <div>RESULTS</div>
+                        <div>&nbsp;&nbsp;〉</div>
+                    </a>
+                </header>
+
+                <section class="wrapperFilter">
+                    <h2 class="filterTitle">SIZES</h2>
+
+                    <ul class="filterOpt">
+                        <li>
+                            <div class="filterLabel">SMALL</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox1" type="checkbox" checked value="None" name="check">
+                                <label for="filterBox1"></label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="filterLabel">MEDIUM</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox2" type="checkbox" checked value="None" name="check">
+                                <label for="filterBox2"></label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="filterLabel">BIG</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox3" type="checkbox" value="None" name="check">
+                                <label for="filterBox3"></label>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h2 class="filterTitle">TYPES</h2>
+
+                    <ul class="filterOpt">
+                        <li>
+                            <div class="filterLabel">HARD CANDIES</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox4" type="checkbox" checked value="None" name="check">
+                                <label for="filterBox4"></label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="filterLabel">CHOCOLATES</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox5" type="checkbox" checked value="None" name="check">
+                                <label for="filterBox5"></label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="filterLabel">GUMS</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox6" type="checkbox" checked value="None" name="check">
+                                <label for="filterBox6"></label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="filterLabel">CARAMELS</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox7" type="checkbox" value="None" name="check">
+                                <label for="filterBox7"></label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="filterLabel">JELLIES</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox8" type="checkbox" value="None" name="check">
+                                <label for="filterBox8"></label>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h2 class="filterTitle">PRICES</h2>
+
+                    <ul class="filterOpt">
+                        <li>
+                            <div class="filterLabel">$0 &middot; $10</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox9" type="checkbox" checked value="None" name="check">
+                                <label for="filterBox9"></label>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="filterLabel">$11 &middot; $20</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox10" type="checkbox" checked value="None" name="check">
+                                <label for="filterBox10"></label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="filterLabel">$21 &middot; $50</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox11" type="checkbox" value="None" name="check">
+                                <label for="filterBox11"></label>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="filterLabel">$51 &middot; ++</div>
+
+                            <div class="filterCheck">
+                                <input id="filterBox12" type="checkbox" value="None" name="check">
+                                <label for="filterBox12"></label>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!--
+            ::: 
+            ::: Product details
+            :::
+        -->
+
+        <div id="viewProduct1" class="modalBackground">
+            <div class="modalContent">
+                <a href="#closeModal" title="Close" class="closeModal">✕</a>
+
+                <img alt="Mint gum" src="static/images/gum/mint/product-detail-slider/1.jpg">
+
+                <div class="productDesc">
+                    <div class="firstColumn">
+                        <h2 class="productDetailName">Mint gum</h2><br>
+
+                        <p>Keep a fresh breath for hours</p>
+
+                        <ul>
+                            <li>Nice freshness</li>
+                            <li>Pleasant flavor</li>
+                        </ul>
+                    </div>
+
+                    <div class="secondColumn">
+                        <p class="secondParagraph">When you have a stinky breath, this is your best choice. its comfortable flavor don't get tired for you.</p>
+                    </div>
+                </div>
+
+                <footer class="see-more">
+                    <img class="see-more" src="static/images/icons/see-more.png">
+                </footer>
+            </div>
+        </div>
+
+        <div id="viewProduct2" class="modalBackground">
+            <div class="modalContent">
+                <a href="#closeModal" title="Close" class="closeModal">✕</a>
+
+                <img alt="Chocolate Bear" src="static/images/choco/bear/product-detail-slider/1.jpg">
+
+                <div class="productDesc">
+                    <div class="firstColumn">
+                        <h2 class="productDetailName">Chocolate Bear</h2><br>
+
+                        <p>Be cute eating these sweety things.</p>
+
+                        <ul>
+                            <li>Healthy for your heart</li>
+                            <li>Black ouside, white inside</li>
+                        </ul>
+                    </div>
+
+                    <div class="secondColumn">
+                        <p class="secondParagraph">Do you have anybody that you love? This is your chance to be more loved. These cuties are the perfect gif for special moments.</p>
+                    </div>
+                </div>
+
+                <footer class="see-more">
+                    <img class="see-more" src="static/images/icons/see-more.png">
+                </footer>
+            </div>
+        </div>
+
+        <div id="viewProduct3" class="modalBackground">
+            <div class="modalContent">
+                <a href="#closeModal" title="Close" class="closeModal">✕</a>
+
+                <img alt="Jawbreakers" src="static/images/hard/jaw/product-detail-slider/1.jpg">
+
+                <div class="productDesc">
+                    <div class="firstColumn">
+                        <h2 class="productDetailName">Jawbreakers</h2><br>
+
+                        <p>Are you dare to chew these thick candies?</p>
+
+                        <ul>
+                            <li>Variety of flavors</li>
+                            <li>Spice, adic, sweet… too many feelings</li>
+                        </ul>
+                    </div>
+
+                    <div class="secondColumn">
+                        <p class="secondParagraph">The thickest candies are more belated to eat than others, that's because it's an entertaining excersise for your teeth and yout tonge.</p>
+                    </div>
+                </div>
+
+                <footer class="see-more">
+                    <img class="see-more" src="static/images/icons/see-more.png">
+                </footer>
+            </div>
+        </div>
+
+        <div id="viewProduct4" class="modalBackground">
+            <div class="modalContent">
+                <a href="#closeModal" title="Close" class="closeModal">✕</a>
+
+                <img alt="Rainbow lollipop" src="static/images/hard/rainbow/product-detail-slider/1.jpg">
+
+                <div class="productDesc">
+                    <div class="firstColumn">
+                        <h2 class="productDetailName">Rainbow lollipop</h2><br>
+
+                        <p>These colors don't run, lick them slowly</p>
+
+                        <ul>
+                            <li>Hypnotizing and delicious at the time</li>
+                            <li>Various shapes that you can choose</li>
+                        </ul>
+                    </div>
+
+                    <div class="secondColumn">
+                        <p class="secondParagraph">A colorful adventure. Lick after lick you can get many feelings. Also, its stick is also edible.</p>
+                    </div>
+                </div>
+
+                <footer class="see-more">
+                    <img class="see-more" src="static/images/icons/see-more.png">
+                </footer>
+            </div>
+        </div>
+
+        <div id="viewProduct5" class="modalBackground">
+            <div class="modalContent productNumberFive">
+                <a href="#closeModal" title="Close" class="closeModal">✕</a>
+
+                <img alt="Gumonade" src="static/images/gum/gumonade/product-detail-slider/1.jpg">
+
+                <div class="productDesc">
+                    <div class="firstColumn">
+                        <h2 class="productDetailName">Gumonade</h2><br>
+
+                        <p>Acidity makes a fun adventure.</p>
+
+                        <ul>
+                            <li>Mix beetwen freshness and acidity</li>
+                            <li>Interesting experience</li>
+                        </ul>
+                    </div>
+
+                    <div class="secondColumn">
+                        <p class="secondParagraph">From the tree to the gum, Gumonade is an amazing chewing exercise. You get a lot of sensations. Don't get lost on its acidly, it could burn your entire mouth!</p>
+                    </div>
+                </div>
+
+                <footer class="see-more">
+                    <img class="see-more" src="static/images/icons/see-more.png">
+                </footer>
+            </div>
+        </div>
+
+        <!-- WEBPAGE FOOTER -->
+
+        <footer class="footer">
+            <section class="socialMedia">
+                <ul>
+                    <li class="socialLink"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//localhost%3A3000/" target="_blank"><img alt="Facebook" class="Facebook" src="static/images/social-media/fb.png"></a></li>
+                    <li class="socialLink"><a href="https://twitter.com/home?status=%20Candy%20bucket%20http%3A//localhost%3A3000/" target="_blank"><img alt="Twitter" class="Twitter" src="static/images/social-media/twitter.png"></a></li>
+                    <li class="socialLink"><a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//localhost%3A3000/&title=Candy%20bucket&summary=The%20most%20interesting%20candy%20shop.&source=" target="_blank"><img alt="LinkedIn" class="LinkedIn" src="static/images/social-media/linkedin.png"></a></li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section class="footerMenu">
+                <div class="countryAndCategories">
+                    <div class="footerCountries">
+                        <select>
+                            <option>COUNTRY</option>
+                        </select>
+                    </div>
+
+                    <p class="footerOptions">GUMS</p>
+                    <p class="footerOptions">CHOCOLATES</p>
+                    <p class="footerOptions">HARD CANDIES</p>
+                    <p class="footerOptions">OTHER KIND OF CANDIES</p>
+                </div>
+
+                <hr>
+
+                <div class="companyMenu">
+                    <div class="companyList">
+                        <select>
+                            <option>NEWSLETTER</option>
+                        </select>
+                    </div>
+
+                    <p class="footerOptions">ABOUT</p>
+                    <p class="footerOptions">PRIVACY POLICY</p>
+                    <p class="footerOptions">TERMS & CONDITIONS</p>
+                    <p class="footerOptions">LIMITED WARRANTY</p>
+                </div>
+            </section>
+
+            <footer class="copyright">
+                <p>DESIGNED DAVID RIVAS 2015</p>
+            </footer>
+
+            <div class="final"></div>
+        </footer>
+    </body>
+</html>

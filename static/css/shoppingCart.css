@@ -1,0 +1,372 @@
+/* Mobile */
+
+@media (max-width: 480px) {
+    .catCart {
+        margin-top: 25px;
+    }
+
+    .shoppingCart .scIcon {
+        width: 50px;
+    }
+
+    .shoppingCart .productCounter {
+        font-size: 10px;
+        padding: 5px;
+        top: 0px;
+        right: 82px;
+    }
+
+    /* Modal box */
+
+    header.check-buy {
+        border-bottom: 1px solid #B9B9B9;
+    }
+
+    .productsInCart {
+        max-height: 300px;
+    }
+
+    li.cartItem {
+        margin: 10px auto 10px auto;
+    }
+
+    li.cartItem div.desc {
+        display: none;
+    }
+
+    li.cartItem div.add-remove {
+        top: 75px;
+    }
+
+    li.cartItem div.price {
+        top: 125px;
+    }
+
+    .total {
+        margin-top: 20px;
+        min-height: 80px;
+    }
+
+    .sc-hr {
+        display: none;
+    }
+
+    .concept-price {
+        margin: 0px 10px 0px 10px;
+    }
+
+    .cp-hr {
+        clear: both;
+        display: block;
+        position: relative;
+    }
+}
+/* Tablet */
+
+@media (min-width: 481px) and (max-width: 959px) {
+    .shoppingCart .scIcon {
+        width: 45px;
+    }
+
+    .shoppingCart .productCounter {
+        font-size: 10px;
+        padding: 5px;
+        top: -1px;
+        right: 76px;
+    }
+
+    /* Modal box */
+
+    header.check-buy {
+        border-bottom: 1px solid #B9B9B9;
+    }
+
+    .productsInCart {
+        max-height: 200px;
+    }
+
+    li.cartItem {
+        margin: 10px 5px 10px 5px;
+    }
+
+    li.cartItem div.desc {
+        display: none;
+    }
+
+    li.cartItem div.add-remove {
+        top: 75px;
+    }
+
+    li.cartItem div.price {
+        top: 125px;
+    }
+
+    .sc-hr {
+        clear: both;
+        margin-top: 20px;
+    }
+
+    .total {
+        min-height: 80px;
+    }
+
+    .concept-price, .cp-hr {
+        margin-left: 50%;
+        margin-right: 5%;
+    }
+
+    .cp-hr {
+        clear: both;
+    }
+}
+/* Desktop */
+
+@media (min-width: 960px) {
+    .shoppingCart .scIcon {
+        width: 40px;
+    }
+
+    .shoppingCart .productCounter {
+        font-size: 10px;
+        padding: 5px;
+        top: -2px;
+        right: 1px;
+    }
+
+    /* Modal box */
+
+    .productsInCart {
+        max-height: 150px;
+    }
+
+    li.cartItem {
+        margin: 15px 10px 15px 10px;
+    }
+
+    li.cartItem div.desc {
+        font-size: .9em;
+        top: 75px;
+    }
+
+    li.cartItem div.add-remove {
+        top: 100px;
+    }
+
+    li.cartItem div.price {
+        top: 150px;
+    }
+
+    .sc-hr {
+        clear: both;
+        margin-top: 20px;
+    }
+
+    .total {
+        min-height: 80px;
+    }
+
+    .concept-price, .cp-hr {
+        margin-left: 50%;
+        margin-right: 2.5%;
+    }
+    
+    .cp-hr {
+        clear: both;
+    }
+}
+
+/* Styles, not sizes */
+
+.shoppingCart {
+    position: relative;
+    display: inline-block;
+}
+
+.shoppingCart .scIcon {
+    height: auto;
+    position: relative;
+}
+
+.productCounter {
+    color: #fff;
+    font-family: sans-serif;
+    position: absolute;
+}
+
+/* Modal box */
+
+.modalImage {
+    position: relative;
+}
+
+.modalImage img {
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+header.check-buy {
+    background-color: #F4F4F4;
+    display: inline-block;
+    margin-top: -4px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.checkout {
+    display: inline-block;
+    float: left;
+}
+
+.checkout .scIcon {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 30px;
+}
+
+.checkout .productCounter {
+    position: absolute;
+    font-size: 10px;
+    top: 10px;
+    left: 35.5px;
+}
+
+.checkText {
+    background-color: #414141;
+    color: #fff;
+    display: inline-block;
+    font-family: "Arial" sans-serif;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 1.25em;
+    margin: 0px 0px 0px 5px;
+    padding: 5px;
+}
+
+.buy {
+    float: right;
+    height: 45px !important;
+    width: auto !important;
+    position: relative;
+}
+
+.productsInCart, .total {
+    width: 100%;
+}
+
+.productsInCart {
+    margin: auto;
+    overflow-y: scroll;
+}
+
+ul.cartList {
+    list-style: none;
+}
+
+li.cartItem {
+    border-top: 1px solid #BCBCBC;
+    border-left: 1px solid #BCBCBC;
+    border-right: 1px solid #BCBCBC;
+    border-bottom: 5px solid #4F4F4F;
+    display: inline-block;
+    position: relative;
+    /*margin: 10px auto 10px auto; este en cada media */
+}
+
+li.cartItem img {
+    max-width: 100%;
+    height: auto;
+}
+
+li.cartItem > div {
+    position: absolute;
+}
+
+li.cartItem div.close {
+    background-color: #5F5F5F;
+    padding: 5px 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+li.cartItem div.close:hover {
+    background-color: #5BB8AD;
+}
+
+li.cartItem div.name, li.cartItem div.desc, li.cartItem div.price {
+    color: #5E5E5E;
+    right: 25px;
+}
+
+li.cartItem div.name {
+    font-weight: bold;
+    top: 50px;
+    right: 25px;
+}
+
+li.cartItem div.add-remove {
+    display: block;
+    right: 25px;
+}
+
+li.cartItem div.add-remove > div {
+    display: inline-block;
+}
+
+img.addUp, img.removeDown {
+    vertical-align: top;
+    margin: -5px 0px 0px 0px;
+}
+
+img.addUp:hover {
+    content: url('../images/icons/cart-add-hover.png');
+}
+
+img.removeDown:hover {
+    content: url('../images/icons/cart-remove-hover.png');
+}
+
+li.cartItem div.add-remove div.counter {
+    color: #fff;
+    padding: 5px;
+    margin: 0px -3px 0px -3px;
+    width: 35px;
+    text-align: center;
+    background-color: #5F5F5F;
+}
+
+.sc-hr .cp-hr {
+    background-color: #B9B9B9;
+    color: #B9B9B9;    
+}
+
+.total {
+    color: #4F4F4F;
+    display: block;
+    font-size: 20px;
+    font-family: "Arial", sans-serif;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.concept-price {
+    clear: both;
+    position: relative;
+}
+
+.concept-price .concept {
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+}
+
+.concept-price .price {
+    display: inline-block;
+    float: right;
+}

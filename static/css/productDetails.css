@@ -1,0 +1,101 @@
+/*  Mobile: */
+
+@media (max-width: 480px) {
+	.productDesc {
+		padding: 10px;
+	}
+
+	.secondColumn {
+		display: none;
+	}
+}
+/*  Tablet: */
+
+@media (min-width: 481px) and (max-width: 959px) {
+	.productDesc {
+		display: inline-block;
+		padding: 15px;
+	}
+
+	.firstColumn {
+		float: left;
+		width: 40%;
+	}
+
+	.firstColumn p {
+		display: inline;
+	}
+
+	.secondColumn {
+		float: right;
+		display: block;
+		position: relative;
+		width: 55%;
+	}
+
+	.secondParagraph {
+		display: inline;
+		position: relative;
+	}
+}
+/* Desktop: */
+
+@media (min-width: 960px) {
+	.productDesc {
+		display: inline-block;
+		padding: 15px;
+	}
+
+	.firstColumn {
+		float: left;
+		width: 40%;
+	}
+
+	.firstColumn p {
+		display: inline;
+	}
+
+	.secondColumn {
+		float: right;
+		display: block;
+		position: relative;
+		width: 55%;
+	}
+
+	.secondParagraph {
+		display: inline;
+		position: relative;
+	}
+}
+
+/* Styles, not sizes */
+
+.modalContent img {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+h2.productDetailName {
+	background-color: #414141;
+	color: #fff;
+	padding: 5px;
+	display: inline-block;
+}
+
+.firstColumn ul {
+	list-style-image: url('../images/icons/list1.png');
+}
+
+footer.see-more {
+    background-color: #F4F4F4;
+    border-top: 1px solid #B2B2B2;
+    width: 100%;
+    height: 50px;
+}
+
+img.see-more {
+    float: right;
+    width: auto !important;
+    height: 50px !important;
+}

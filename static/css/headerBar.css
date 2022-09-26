@@ -1,0 +1,155 @@
+/* Mobile */
+
+@media (max-width: 480px) {
+	.headerBar {
+		background-color: #fff;
+		height: 100px;
+		position: absolute;
+		z-index: 2;
+	}
+
+	ul.headerCategories {
+        display: none;
+    }
+
+	.shopName {
+		margin-top: 25px;
+		margin-left: 15px;
+		font-size: 25px;
+	}
+
+	.shopIcon {
+		width: 30px;
+	}
+
+	a.headerPull-downMenu {
+		display: inline-block;
+	}
+
+	img.headerPull-downMenu {
+		display: inline-block;
+		height: auto;
+		margin-left: 30px;
+		width: 45px;
+	}
+
+	.catCart {
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+}
+
+/* Tablet */
+
+@media (min-width: 481px) and (max-width: 959px) {
+	.headerBar {
+		background-color: rgba(255,255,255,0.5);
+		height: 75px;
+	}
+
+	ul.headerCategories {
+		display: none;
+	}
+
+	.shopName {
+		margin-left: 25px;
+		font-size: 25px;
+		margin-top: 15px;
+	}
+
+	.shopIcon {
+		height: 30px;
+		width: 30px;
+	}
+
+	a.headerPull-downMenu {
+		display: inline-block;
+	}
+
+	img.headerPull-downMenu {
+		display: inline-block;
+		height: auto;
+		margin-left: 30px;
+		width: 40px;
+	}
+
+	.catCart {
+		margin-right: 20px;
+		margin-top: 15px;
+	}
+}
+
+/* Desktop */
+
+@media (min-width: 960px) {
+	.headerBar {
+		background-color: rgba(255,255,255,0.5);
+		height: 100px;
+	}
+
+	ul.headerCategories {
+		display: inline-block;
+		list-style: none;
+		float: left;
+		margin-right: 25px;
+	}
+
+	ul.headerCategories li {
+		background-color: #4F4F4F;
+		color: #fff;
+		padding: 5px;
+		list-style: none;
+		display: inline-block;
+		margin: -6px 2px 0px 2px;
+	}
+
+	.shopName {
+		margin-left: 25px;
+		margin-top: 30px;
+		font-size: 25px;
+	}
+
+	.shopIcon {
+		height: 25px;
+		width: 25px;
+	}
+
+	a.headerPull-downMenu {
+		display: none;
+	}
+
+	img.headerPull-downMenu {
+		display: none;
+	}
+
+	.catCart {
+		margin-right: 30px;
+		margin-top: 25px;
+	}
+}
+
+/* Styles, not sizes */
+
+.headerBar {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+@font-face {
+	font-family: "Krinkes";
+	src: url('../fonts/krinkes/KrinkesDecorPERSONAL.ttf');
+}
+
+.shopName {
+	color: #000;
+	display: inline-block;
+	float: left;
+	font-family: "Krinkes";
+}
+
+.catCart {
+	display: inline-block;
+	float: right;
+}

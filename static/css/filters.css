@@ -1,0 +1,356 @@
+/* Mobile */
+
+@media (max-width: 480px) {
+	header.breadcrums {
+		margin-left: 15px;
+		margin-right: 15px;
+		display: block;
+		position: relative;
+	}
+
+	div.breadcrum {
+		font-size: 20px;
+		padding: 5px;
+		position: relative;
+	}
+
+	div.breadcrum .name {
+		margin-right: 5px;
+	}
+
+	div.breadcrum .close {
+		margin-left: 5px;
+	}
+
+	header.count-bread {
+		display: none;
+	}
+
+	aside.filter {
+		display: none;
+	}
+
+	footer.count-filter {
+		background-color: #F4F4F4;
+		border-top: 1px solid #B2B2B2;
+		display: block;
+		height: 50px;
+	}
+
+	footer.count-filter .counter {
+		margin: 10px 0px 0px 15px;
+		color: #4E4E4E;
+		display: inline-block;
+		font-size: 20px;
+		float: left;
+	}
+
+	a.mobFilter {
+		background-color: #49B2A5;
+		color: #fff;
+		display: inline-block;
+		float: right;
+		padding: 0;
+		height: 50px;
+	}
+
+	a.mobFilter .name {
+		font-size: 20px;
+		float: left;
+		display: inline-block;
+		margin-top: 10px;
+		margin-right: 5px;
+		margin-left: 10px;
+	}
+
+	a.mobFilter .plus {
+		font-size: 35px;
+		float: right;
+		display: inline-block;
+		margin-left: 5px;
+		margin-right: 10px;
+	}
+
+	/* Filter modal */
+
+	div.filterMobTab {
+		width: 85%;
+	}
+
+	ul.filterOpt li {
+		line-height: 35px;
+	}
+}
+
+/* Tablet */
+
+@media (min-width: 481px) and (max-width: 959px) {
+	header.breadcrums {
+		display: none;
+	}
+
+	header.count-bread {
+		background-color: #E2E2E2;
+		clear: both;
+		display: block;
+		height: 75px;
+	}
+
+	a.mobFilter {
+		background-color: #49B2A5;
+		color: #fff;
+		display: inline-block;
+		float: left;
+		height: inherit;
+		width: 200px;
+	}
+
+	a.mobFilter div.counter {
+		display: inline-block;
+		float: left;
+	}
+
+	a.mobFilter div.counter div.name {
+		display: inline-block;
+		float: left;
+		font-size: 20px;
+		font-weight: bold;
+		margin: 24px 0px 0px 40px;
+	}
+
+	a.mobFilter div.counter div.results {
+		display: none;
+	}
+
+	a.mobFilter div.counter div.plus {
+		display: inline-block;
+		float: right;
+		font-size: 40px;
+		font-weight: bold;
+		margin: 8px 0px 0px 15px;
+	}
+
+	/* Filter modal */
+
+	div.filterMobTab {
+		width: 80%;
+	}
+
+	input.filterCheck {
+		margin-right: 15px;
+	}
+
+	ul.filterOpt li {
+		line-height: 35px;
+	}
+
+	/* ----- */
+
+	div.breadcrumsTD {
+		display: inline-block;
+		float: right;
+		margin: 23px 25px 0px 0px;
+	}
+
+	div.breadcrumsTD div.breadcrum {
+		padding: 5px;
+	}
+
+	div.breadcrumsTD div.breadcrum div.name {
+		margin-right: 5px;
+	}
+
+	div.breadcrumsTD div.breadcrum div.close {
+		margin-left: 5px;
+	}
+
+	aside.filter {
+		display: none;
+	}
+
+	footer.count-filter {
+		display: none;
+	}
+}
+/* Desktop */
+
+@media (min-width: 960px) {
+	header.breadcrums {
+		display: none;
+	}
+
+	header.count-bread {
+		background-color: #E2E2E2;
+		clear: both;
+		display: block;
+		height: 75px;
+	}
+
+	a.mobFilter {
+		background-color: #49B2A5;
+		color: #fff;
+		display: inline-block;
+		float: left;
+		pointer-events: none;
+		height: inherit;
+		width: 20%;
+	}
+
+	a.mobFilter div.counter {
+		display: inline-block;
+		float: left;
+	}
+
+	a.mobFilter div.counter div.name {
+		display: inline-block;
+		float: left;
+		font-size: 20px;
+		font-weight: bold;
+		margin: 25px 5px 0px 25px;
+	}
+
+	a.mobFilter div.counter div.results {
+		display: inline-block;
+		float: right;
+		font-size: 15px;
+		margin: 25px 0px 0px 5px;
+	}
+
+	a.mobFilter div.counter div.plus {
+		display: none;
+	}
+
+	div.breadcrumsTD {
+		margin: 23px 25px 0px 0px;
+		display: inline-block;
+		float: right;
+	}
+
+	div.breadcrumsTD div.breadcrum {
+		padding: 5px;
+	}
+
+	div.breadcrumsTD div.breadcrum div.name {
+		margin-right: 5px;
+	}
+
+	div.breadcrumsTD div.breadcrum div.close {
+		margin-left: 5px;
+	}
+
+	div.filterMobTab {
+		display: none;
+	}
+
+	aside.filter {
+		margin-top: 15px;
+		display: inline-block;
+		float: left;
+        width: 20%;
+	}
+
+	ul.filterOpt li {
+		line-height: 35px;
+	}
+
+	footer.count-filter {
+		display: none;
+	}
+}
+
+/* Styles not sizes */
+
+div.breadcrum {
+	background-color: #4F4F4F;
+	font-family: "Arial", sans-serif;
+	display: inline-block;
+
+}
+div.breadcrum .name {
+	color: #fff;
+	display: inline-block;
+	float: left;
+}
+
+div.breadcrum .close {
+	color: #47B3A5;
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+}
+
+div.breadcrum .close:hover {
+	color: #fff;
+}
+
+/* Filter Mobile and Tablet */
+
+div.filterMobTab {
+    background: #fff;
+    border: 5px solid #4F4F4F;
+    margin: 50px auto;
+    padding: 0;
+    position: relative;
+}
+
+header.filter-result {
+	background-color: #F4F4F4;
+	display: block;
+	height: 50px;
+	border-bottom: 1px solid #DCDCDC;
+	margin-bottom: 20px;
+}
+
+header.filter-result div.filter {
+	display: inline-block;
+	float: left;
+	font-weight: bold;
+	font-size: 25px;
+	margin: 10px;
+}
+
+header.filter-result a.result {
+	background-color: #49B2A5;
+	color: #fff;
+	display: inline-block;
+	float: right;
+	width: 100px;
+	padding: 16px 10px 16px 10px;
+}
+
+header.filter-result a.result div:nth-child(1) {
+	float: left;
+	display: inline-block;
+}
+
+section.wrapperFilter {
+	width: 100%;
+	position: relative;
+	overflow-y: scroll;
+	max-height: 500px;
+}
+
+/* Desktop filter */
+
+aside.filter {
+	z-index: 999;
+}
+
+/* Applied to all filters */
+
+div.filter-result a.result div:nth-child(2) {
+	float: right;
+	display: inline-block;
+}
+
+h2.filterTitle {
+	background-color: #414141;
+	color: #fff;
+	display: inline-block;
+	padding: 5px;
+	margin: 0px 0px -2px 15px;
+}
+
+ul.filterOpt {
+	list-style-image: url('../images/icons/list1.png');
+}
